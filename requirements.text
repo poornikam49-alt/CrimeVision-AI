@@ -1,0 +1,10 @@
+streamlit
+opencv-python-headless
+ultralytics
+torch
+torchvision
+numpy
+pandas
+scikit-learn
+reportlab
+Pillow
