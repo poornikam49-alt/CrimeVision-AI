@@ -1,0 +1,15 @@
+
+.venv/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+dataset/
+dataset_split/
+reports/
+frames/
+videos/
+*.mp4
+*.avi
+*.mov
+*.mkv
