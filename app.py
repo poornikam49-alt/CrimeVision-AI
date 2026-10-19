@@ -857,8 +857,7 @@ if video is not None:
 
                         observations.append({
                             "time": frame_number / fps,
-                            "objects": detected,
-                            "frame": result.plot()
+                            "objects": detected
                         })
 
                         analyzed += 1
@@ -993,15 +992,11 @@ if video is not None:
 
                 st.subheader("Sample Analyzed Frame")
 
-                if observations:
-                    st.image(
-                        cv2.cvtColor(
-                            observations[0]["frame"],
-                            cv2.COLOR_BGR2RGB
-                        ),
-                        caption="YOLO object detection",
-                        use_container_width=True
-                    )
+                st.info(
+                    "Frame-level object detections are included in the "
+                    "timestamped observations. The annotated frame preview "
+                    "is disabled to reduce memory usage."
+                )
 
                 
                 st.subheader("Timestamped Observations")
