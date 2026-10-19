@@ -10,3 +10,4 @@ scikit-learn
 reportlab
 Pillow
 transformers
+huggingface_hub
